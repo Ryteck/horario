@@ -1,0 +1,22 @@
+.background{
+	-fx-background-color: #263238;
+}
+
+.button-basic{
+	-fx-text-fill: #ffffff;
+	-fx-background-radius: 25;
+	-fx-border-radius: 25;
+}
+
+.background-button-primary{
+
+}
+
+
+.background-button-secondary{
+	
+}
+
+.text-white{
+	-fx-text-fill: #ffffff;
+}

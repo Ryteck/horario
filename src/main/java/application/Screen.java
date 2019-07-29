@@ -13,19 +13,24 @@ public class Screen extends Application {
 
     private static String title;
 
-    private static String iconPath;
+    private static boolean resizable;
+
+    private static String iconPath = "/img/icon.png";
 
     private static Stage stage;
 
     public void initial(){
         setPath("initial");
         setTitle("Home");
+        setResizable(false);
         launch();
     }
 
-    public void restart(String path, String title){
+    public void restart(String path, String title, boolean resizable){
+
         setPath(path);
         setTitle(title);
+        setResizable(resizable);
         getStage().close();
 
         try {
@@ -44,9 +49,9 @@ public class Screen extends Application {
         Scene scene = new Scene(root);
 
         stage.setTitle(getTitle());
-        //stage.getIcons().add(new Image(getIconPath()));
+        stage.getIcons().add(new Image(getIconPath()));
         stage.setScene(scene);
-        stage.setResizable(false);
+        stage.setResizable(isResizable());
         stage.show();
 
         setStage(stage);
@@ -74,6 +79,14 @@ public class Screen extends Application {
 
     private void setTitle(String title) {
         Screen.title = title;
+    }
+
+    private static boolean isResizable() {
+        return resizable;
+    }
+
+    private static void setResizable(boolean resizable) {
+        Screen.resizable = resizable;
     }
 
     private String getIconPath() {
