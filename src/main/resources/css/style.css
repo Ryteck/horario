@@ -9,7 +9,8 @@
 }
 
 .background-button-primary{
-
+	-fx-background-color: #37474f;
+	-fx-text-fill: #ffffff;
 }
 
 
@@ -19,4 +20,8 @@
 
 .text-white{
 	-fx-text-fill: #ffffff;
+}
+
+.pane-active-button{
+	-fx-background-color: #00c853;
 }
