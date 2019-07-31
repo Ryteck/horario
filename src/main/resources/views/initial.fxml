@@ -23,7 +23,7 @@
             <Font size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="238.0" layoutY="173.0" onAction="#redefinir" prefHeight="31.0" prefWidth="140.0" style="-fx-background-color: #f44336;" styleClass="button-basic" text="Redefinir">
+      <JFXButton layoutX="238.0" layoutY="173.0" onAction="#redefinir" prefHeight="31.0" prefWidth="140.0" style="-fx-background-color: #ffc400;" styleClass="button-basic" text="Redefinir">
          <font>
             <Font size="15.0" />
          </font>

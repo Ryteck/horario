@@ -2,6 +2,10 @@
 	-fx-background-color: #263238;
 }
 
+.background-pane-modular{
+	-fx-background-color: #283593;
+}
+
 .button-basic{
 	-fx-text-fill: #ffffff;
 	-fx-background-radius: 25;

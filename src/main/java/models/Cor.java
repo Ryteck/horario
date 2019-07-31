@@ -1,18 +1,20 @@
 package models;
 
+import javafx.scene.paint.Color;
+
 public class Cor {
     
-    private String code;
+    private Color code;
 
-    public Cor(String code) {
+    public Cor(Color code) {
         this.code = code;
     }
 
-    public String getCode() {
+    public Color getCode() {
         return code;
     }
 
-    public void setCode(String code) {
+    public void setCode(Color code) {
         this.code = code;
     }
 }

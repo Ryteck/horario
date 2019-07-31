@@ -1,5 +1,8 @@
 package models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Professor {
 
     private int idProfessor;
@@ -8,5 +11,5 @@ public class Professor {
 
     private Cor corProfessor;
 
-    private Materia[] materiasProfessor;
+    public static List<Materia> materias = new ArrayList<>();
 }

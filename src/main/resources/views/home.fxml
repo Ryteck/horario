@@ -27,7 +27,7 @@
                         </Label>
                      </children>
                   </AnchorPane>
-                  <VBox alignment="CENTER_LEFT" prefHeight="720.0" prefWidth="200.0" spacing="25.0">
+                  <VBox alignment="CENTER_LEFT" prefHeight="720.0" prefWidth="200.0" spacing="10.0">
                      <children>
                         <HBox prefHeight="50.0" prefWidth="200.0" styleClass="background-button-primary">
                            <children>
@@ -83,7 +83,24 @@
                         <HBox prefHeight="50.0" prefWidth="200.0" styleClass="background-button-primary">
                            <children>
                               <Pane fx:id="pane4" prefHeight="50.0" prefWidth="10.0" stylesheets="@../css/style.css" />
-                              <JFXButton id="4" alignment="TOP_LEFT" onAction="#actionButton4" prefWidth="240.0" styleClass="background-button-primary" text="Tabela">
+                              <JFXButton id="3" alignment="TOP_LEFT" onAction="#actionButton4" prefWidth="240.0" styleClass="background-button-primary" text="Turmas">
+                                 <graphic>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/buttons_sidebar_icons/ic_class_black_48dp.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0" styleClass="background-button-primary">
+                           <children>
+                              <Pane fx:id="pane5" prefHeight="50.0" prefWidth="10.0" stylesheets="@../css/style.css" />
+                              <JFXButton id="4" alignment="TOP_LEFT" onAction="#actionButton5" prefWidth="240.0" styleClass="background-button-primary" text="Tabela">
                                  <graphic>
                                     <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -99,8 +116,8 @@
                         </HBox>
                         <HBox prefHeight="50.0" prefWidth="200.0" styleClass="background-button-primary">
                            <children>
-                              <Pane fx:id="pane5" prefHeight="50.0" prefWidth="10.0" stylesheets="@../css/style.css" />
-                              <JFXButton id="5" alignment="TOP_LEFT" onAction="#actionButton5" prefWidth="240.0" styleClass="background-button-primary" text="Settings">
+                              <Pane fx:id="pane6" prefHeight="50.0" prefWidth="10.0" stylesheets="@../css/style.css" />
+                              <JFXButton id="5" alignment="TOP_LEFT" onAction="#actionButton6" prefWidth="240.0" styleClass="background-button-primary" text="Settings">
                                  <graphic>
                                     <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -116,8 +133,8 @@
                         </HBox>
                         <HBox prefHeight="50.0" prefWidth="200.0" styleClass="background-button-primary">
                            <children>
-                              <Pane fx:id="pane6" prefHeight="50.0" prefWidth="10.0" stylesheets="@../css/style.css" />
-                              <JFXButton id="6" alignment="TOP_LEFT" onAction="#actionButton6" prefWidth="240.0" styleClass="background-button-primary" text="Backups">
+                              <Pane fx:id="pane7" prefHeight="50.0" prefWidth="10.0" stylesheets="@../css/style.css" />
+                              <JFXButton id="6" alignment="TOP_LEFT" onAction="#actionButton7" prefWidth="240.0" styleClass="background-button-primary" text="Backups">
                                  <graphic>
                                     <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -133,8 +150,8 @@
                         </HBox>
                         <HBox prefHeight="50.0" prefWidth="200.0" styleClass="background-button-primary">
                            <children>
-                              <Pane fx:id="pane7" prefHeight="50.0" prefWidth="10.0" stylesheets="@../css/style.css" />
-                              <JFXButton id="7" alignment="TOP_LEFT" onAction="#actionButton7" prefWidth="240.0" styleClass="background-button-primary" text="Logout">
+                              <Pane fx:id="pane8" prefHeight="50.0" prefWidth="10.0" stylesheets="@../css/style.css" />
+                              <JFXButton id="7" alignment="TOP_LEFT" onAction="#actionButton8" prefWidth="240.0" styleClass="background-button-primary" text="Logout">
                                  <graphic>
                                     <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                        <image>

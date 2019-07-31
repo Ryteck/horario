@@ -26,10 +26,7 @@ public class InitialController {
     private void login(){
         if (!"".equals(txtPassword.getText())){
             try {
-
-                authenticator = new Authenticator(txtPassword.getText());
-                if (authenticator.validar()) logar(); else showError(2);
-
+                if (authenticator.password(txtPassword.getText())) logar(); else showError(2);
             }catch (Exception e){
                 e.printStackTrace();
                 showError(3);

@@ -1,14 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXColorPicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controllers.partials.MateriasController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="720.0" prefWidth="1030.0" styleClass="background-pane-modular" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.partials.MateriasController">
+   <children>
+      <JFXColorPicker fx:id="colorP" layoutX="219.0" layoutY="392.0" prefWidth="225.0" />
+      <JFXTextField fx:id="txtNome" focusColor="#76ff03" layoutX="219.0" layoutY="302.0" styleClass="text-white">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <Label layoutX="87.0" layoutY="324.0" styleClass="text-white" text="Nome:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="389.0" styleClass="text-white" text="Cor:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTreeTableView fx:id="tableMaterias" layoutX="566.0" layoutY="60.0" prefHeight="600.0" prefWidth="450.0" />
+      <HBox layoutX="30.0" layoutY="616.0" prefHeight="44.0" prefWidth="470.0" spacing="10.0">
+         <children>
+            <JFXButton onAction="#salvar" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #00bfa5;" styleClass="button-basic" text="Salvar">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#redefinir" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #ffc400;" styleClass="button-basic" text="Redefinir">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#excluir" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #f44336;" styleClass="button-basic" text="Excluir">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Label layoutX="103.0" layoutY="146.0" styleClass="text-white" text="Gerenciador de matérias">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

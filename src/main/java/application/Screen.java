@@ -15,7 +15,7 @@ public class Screen extends Application {
 
     private static boolean resizable;
 
-    private static String iconPath = "/img/icon.png";
+    private final static String iconPath = "/img/icon.png";
 
     private static Stage stage;
 

@@ -1,5 +1,8 @@
 package models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Campo {
-    private Professor[] professores;
+    public static List<Professor> professores = new ArrayList<>();
 }
